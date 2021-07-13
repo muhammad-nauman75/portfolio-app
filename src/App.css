@@ -1,38 +1,86 @@
-.App {
+:root {
+  --background-color: #333;
+
+  --background-color: #10121a;
+  --background-color-2: #333049;
+  --font-color: #a4acc4;
+  --container-background: rgb(28, 28, 39);
+
+  --background-color-3: #191d2b;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+a {
+  font-family: inherit;
+  color: inherit;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.heading {
+  font-size: 40px;
+  text-shadow: 2px 2px #ff0000;
   text-align: center;
+  font-weight: 500;
+  text-decoration: double underline red;
+  padding: 60px;
+  text-underline-offset: 9px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333049c0;
+  z-index: 2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Modal {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  right: 60px;
+  width: 80%;
+  margin: auto;
+  border: none;
+}
+.modal-img {
+  width: 100%;
+}
+.close-icon {
+  position: absolute;
+  top: 0;
+  right: -55px;
+  background-color: #57527a;
+  padding: 5px 13px;
+  cursor: pointer;
+  font-size: 40px;
+  transition: all 0.5s ease;
+}
+.close-icon:hover {
+  background-color: var(--font-color);
+  color: #57527a;
+}
+@media (max-width: 700px) {
+  * {
+    font-size: 1.1rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .container {
+    width: 90%;
+    margin: auto;
   }
 }
