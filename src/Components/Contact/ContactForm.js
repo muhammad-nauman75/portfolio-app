@@ -54,7 +54,7 @@ const ContactForm = () => {
             autoComplete="off"
             name="name"
             placeholder="Your Name*"
-            required="true"
+            required
             value={name}
             onChange={(e) => {
               setName(e.target.value);
@@ -67,7 +67,7 @@ const ContactForm = () => {
             type="email"
             name="email"
             autoComplete="off"
-            required="true"
+            required
             placeholder="Your Email Adress*"
             value={email}
             onChange={(e) => {
@@ -80,7 +80,7 @@ const ContactForm = () => {
             className="input-field"
             name="message"
             placeholder="Your Message*"
-            required="true"
+            required
             cols="30"
             rows="8"
             value={message}

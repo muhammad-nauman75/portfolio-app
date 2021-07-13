@@ -13,7 +13,7 @@ const ProjectItem = ({ project }) => {
           onClick={() => {
             setModalIsOpen(true);
           }}
-          alt=""
+          alt={project.title}
         />
         <Modal
           isOpen={modalIsOpen}
@@ -23,7 +23,7 @@ const ProjectItem = ({ project }) => {
           overlayClassName="Overlay"
           className="Modal"
         >
-          <img className="modal-img " src={project.img} />
+          <img className="modal-img " src={project.img} alt={project.title} />
           <span
             className="close-icon"
             onClick={() => {

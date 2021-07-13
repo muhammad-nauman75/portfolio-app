@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { makeStyles } from "@material-ui/styles";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import { IconButton } from "@material-ui/core";
 import styled from "styled-components";
 
 const ScrollBack = ({ showBelow }) => {
