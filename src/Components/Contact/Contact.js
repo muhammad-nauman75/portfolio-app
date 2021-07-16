@@ -44,7 +44,7 @@ const Contact = () => {
 const ContactStyled = styled.section`
   .contact-info {
     display: flex;
-    width: 60%;
+
     margin: auto;
     justify-content: space-around;
     align-items: center;
@@ -62,8 +62,9 @@ const ContactStyled = styled.section`
     font-size: 3rem;
     margin: 10px;
     transition: all 0.5s ease;
+    color: var(--background-color-2);
     &:hover {
-      color: orange;
+      color: var(--background-color-3);
     }
   }
 `;

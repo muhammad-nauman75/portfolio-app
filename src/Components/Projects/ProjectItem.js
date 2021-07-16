@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Modal from "react-modal";
 import { useState } from "react";
 
+Modal.setAppElement("#root");
 const ProjectItem = ({ project }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
@@ -49,12 +50,18 @@ const ItemStyled = styled.li`
   display: flex;
   padding: 20px;
   margin: 20px 0;
-  border-radius: 8px;
-  background-color: var(--container-background);
+  border-radius: 10px;
+  background-color: white;
 
   .pro-img {
     flex: 1;
     cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 5px 5px 7px 3px rgba(0, 0, 0, 0.21);
+    transition: all 0.5s ease;
+    &:hover {
+      box-shadow: 6px 6px 8px 5px rgba(0, 0, 0, 0.41);
+    }
     img {
       width: 100%;
     }
@@ -66,13 +73,13 @@ const ItemStyled = styled.li`
     line-height: 30px;
     .pro-title {
       font-size: 30px;
-      color: orange;
+      color: var(--background-color-2);
       padding-bottom: 3px;
     }
     .pro-tools {
       span {
-        color: aqua;
         padding-left: 15px;
+        color: var(--font-color-3);
       }
     }
     p {

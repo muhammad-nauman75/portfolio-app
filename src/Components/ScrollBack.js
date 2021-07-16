@@ -39,11 +39,13 @@ const StyledButton = styled.div`
   z-index: 1;
   bottom: 2vh;
   right: 5%;
-  background-color: var(--background-color-2);
+  background-color: var(--background-color-3);
   cursor: pointer;
+  border-radius: 50%;
 
   .icon {
     font-size: 3rem;
+    color: white;
   }
 `;
 

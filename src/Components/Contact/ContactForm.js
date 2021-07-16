@@ -100,7 +100,7 @@ const ContactForm = () => {
 };
 const FormStyled = styled.section`
   form {
-    width: 60%;
+    width: 80%;
     margin: 40px auto auto auto;
     @media (max-width: 700px) {
       width: 100%;
@@ -108,12 +108,13 @@ const FormStyled = styled.section`
     .form-heading {
       padding: 20px 0;
       font-size: 35px;
-      color: orange;
+      color: var(--background-color-2);
     }
     .alert {
-      background-color: green;
+      background-color: #38b000;
+      color: white;
       padding: 15px;
-      width: 60%;
+      text-align: center;
       border-radius: 40px;
     }
     .action-container {
@@ -124,13 +125,15 @@ const FormStyled = styled.section`
         padding: 15px;
         cursor: pointer;
         background-color: var(--background-color-2);
+
         border: none;
         border-radius: 8px;
-        color: var(--font-color);
+        color: white;
         transition: all 0.3s ease;
         &:hover {
-          background-color: orange;
-          color: var(--background-color-2);
+          background-color: var(--background-color-3);
+
+          box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.31);
         }
       }
     }
@@ -141,18 +144,17 @@ const FormStyled = styled.section`
       width: 100%;
       padding: 14px;
       border: none;
-      border-bottom: 2px solid orange;
+      border-bottom: 2px solid var(--background-color-2);
       border-radius: 15px;
       margin: 15px 0;
-      background-color: var(--container-background);
+
       color: var(--font-color);
       transition: 0.3s ease all;
 
       &:focus {
         border: none;
         outline: none;
-        border-bottom: 6px solid orange;
-        background-color: var(--background-color-2);
+        border-bottom: 6px solid var(--background-color-2);
       }
     }
     .invalid {

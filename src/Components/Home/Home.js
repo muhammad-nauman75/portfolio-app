@@ -47,6 +47,7 @@ const Home = () => {
 };
 const SectionStyled = styled.section`
   position: relative;
+  margin-top: 40px;
   .p-particles-js {
     position: absolute;
     top: 0;
@@ -59,12 +60,16 @@ const SectionStyled = styled.section`
   .hero {
     display: flex;
     align-items: center;
-    padding: 60px 0;
+    padding: 130px 0 20px 0;
     .left {
-      flex: 1;
+      flex: 2;
+
       img {
-        width: 500px;
-        padding: 0 80px 0 0;
+        width: 100%;
+
+        filter: drop-shadow(17px 17px 10px #666666);
+
+        /* padding: 0 80px 0 0; */
       }
       /* @media (max-width: 700px) {
         flex-direction: column;
@@ -74,27 +79,31 @@ const SectionStyled = styled.section`
       } */
     }
     .right {
-      flex: 2;
+      flex: 5;
+      padding-left: 50px;
 
       h1 {
         font-family: "Merienda", cursive;
         font-weight: 700;
-        font-size: 50px;
+        font-size: 65px;
         padding: 5px;
-        color: aqua;
+        color: var(--background-color-2);
       }
       h2 {
         font-size: 40px;
+        font-weight: 700;
         font-family: "Merienda", cursive;
-        color: orange;
       }
       h3 {
         font-size: 30px;
+        font-weight: 600;
       }
       span {
-        color: #ffa0a0;
         padding-top: 2px;
         font-size: 30px;
+        font-weight: 600;
+        /* color: var(--font-color); */
+        color: var(--font-color-3);
       }
     }
   }
@@ -107,7 +116,7 @@ const SectionStyled = styled.section`
       justify-content: space-around;
       .left {
         img {
-          width: 150px;
+          width: 200px;
           padding-right: 12px;
         }
       }

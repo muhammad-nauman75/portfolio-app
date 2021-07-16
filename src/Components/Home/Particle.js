@@ -16,13 +16,13 @@ const Particle = () => {
             },
           },
           color: {
-            value: "#7d89af",
+            value: "#8444df",
           },
           shape: {
             type: "circle",
             stroke: {
               width: 0,
-              color: "#000000",
+              color: "#8444df",
             },
             polygon: {
               nb_sides: 5,
@@ -56,7 +56,7 @@ const Particle = () => {
           line_linked: {
             enable: true,
             distance: 192.2075841909262,
-            color: "#ffffff",
+            color: "#8444df",
             opacity: 0.3443719216754094,
             width: 1.4415568814319464,
           },

@@ -14,7 +14,8 @@ const LiStyled = styled.li`
   text-align: center;
   transition: all 0.3s ease;
   &:hover {
-    background-color: var(--background-color-2);
+    border-radius: 8px;
+    box-shadow: 0px 0px 31px 3px rgba(0, 0, 0, 0.41);
   }
   img {
     height: 60px;

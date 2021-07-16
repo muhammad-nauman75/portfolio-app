@@ -28,7 +28,7 @@ const HamburgerStyled = styled.div`
   div {
     height: 5px;
     width: 100%;
-    background-color: var(--font-color);
+    background-color: var(--font-color-2);
     border-radius: 15px;
     transform-origin: left;
     transition: all 0.5s ease;

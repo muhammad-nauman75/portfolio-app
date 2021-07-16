@@ -1,11 +1,14 @@
+/* Old Style */
+
 :root {
-  --font-color: #333;
-  --font-color-2: #ffbe0b;
-  --font-color-3: #ff0000;
-  --background-color: #f3f3f3;
-  --background-color-2: #8444df;
-  --background-color-3: #ac70ff;
-  --background-color-4: #6030a3;
+  --background-color: #333;
+
+  --background-color: #10121a;
+  --background-color-2: #333049;
+  --font-color: #a4acc4;
+  --container-background: rgb(28, 28, 39);
+
+  --background-color-3: #191d2b;
 }
 * {
   padding: 0;
@@ -31,15 +34,12 @@ a {
 }
 .heading {
   font-size: 40px;
-  color: var(--background-color-2);
-  text-shadow: 2px 2px var(--background-color-3);
-
+  text-shadow: 2px 2px #ff0000;
+  text-align: center;
   font-weight: 500;
-
-  padding: 60px 0 6px 0;
-  margin-bottom: 60px;
+  text-decoration: double underline red;
+  padding: 60px;
   text-underline-offset: 9px;
-  border-bottom: 10px solid var(--background-color-3);
 }
 
 .Overlay {
@@ -48,7 +48,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #7e77889a;
+  background-color: #333049c0;
   z-index: 2;
 }
 .Modal {
@@ -67,15 +67,15 @@ a {
   position: absolute;
   top: 0;
   right: -55px;
-  background-color: var(--background-color-3);
-  color: white;
+  background-color: #57527a;
   padding: 5px 13px;
   cursor: pointer;
   font-size: 40px;
   transition: all 0.5s ease;
 }
 .close-icon:hover {
-  background-color: var(--background-color-2);
+  background-color: var(--font-color);
+  color: #57527a;
 }
 @media (max-width: 700px) {
   * {

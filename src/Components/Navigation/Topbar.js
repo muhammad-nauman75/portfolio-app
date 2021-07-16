@@ -59,12 +59,12 @@ const Topbar = ({ manuOpen, setManuOpen }) => {
               </li>
             </ul>
             <div className="icon-list">
-              <a href="https://github.com/muhammad-nauman75">
+              {/* <a href="https://github.com/muhammad-nauman75">
                 <GitHub className="icon" />
               </a>
               <a href="https://www.linkedin.com/in/muhammad-nauman-4b9b6b215/">
                 <LinkedIn className="icon" />
-              </a>
+              </a> */}
             </div>
           </div>
           <Hamburger
@@ -79,12 +79,19 @@ const Topbar = ({ manuOpen, setManuOpen }) => {
 };
 const NavStyled = styled.nav`
   background-color: var(--background-color-2);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  /* border-bottom: 10px solid var(--background-color-4); */
+  /* box-shadow: 0px 20px 25px 9px #8444df; */
 
   .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100px;
+    min-height: 80px;
     /* @media (max-width: 700px) {
       flex-direction: column;
     } */
@@ -93,11 +100,11 @@ const NavStyled = styled.nav`
     .logo-f-letter {
       font-size: 60px;
       font-weight: 600;
-      color: orange;
+      color: #ffbe0b;
+      font-family: "Merienda", cursive;
       span {
         letter-spacing: 10px;
-        font-family: "Merienda", cursive;
-        color: var(--font-color);
+        color: white;
       }
     }
   }
@@ -110,8 +117,10 @@ const NavStyled = styled.nav`
   .icon-list {
     text-align: right;
     padding-right: 20px;
+    height: 100%;
     a {
       padding: 0 10px;
+      height: 100%;
     }
     .icon {
       font-size: 40px;
@@ -128,11 +137,16 @@ const NavStyled = styled.nav`
 
     justify-content: space-between;
     padding: 18px 0;
+    height: 100%;
     a {
-      padding: 15px 20px;
+      display: block;
+      padding: 20px 30px;
       transition: all 0.5s ease;
+
       &:hover {
         background-color: var(--background-color-3);
+        border-radius: 8px;
+        box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.31);
       }
     }
   }
@@ -145,7 +159,8 @@ const NavStyled = styled.nav`
       right: 0;
       height: 88.5vh;
       text-align: center;
-      transform: translate(300px);
+      transform: translateX(300px);
+
       transition: 0.5s ease all;
       z-index: 4;
       .nav-list {
