@@ -56,8 +56,8 @@ const Particle = () => {
           line_linked: {
             enable: true,
             distance: 192.2075841909262,
-            color: "#8444df",
-            opacity: 0.3443719216754094,
+            color: "#ff0000",
+            opacity: 0.5,
             width: 1.4415568814319464,
           },
           move: {

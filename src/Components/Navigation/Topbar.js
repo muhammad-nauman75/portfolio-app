@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { GitHub } from "@material-ui/icons";
-import { LinkedIn } from "@material-ui/icons";
+
 import Hamburger from "./Hamburger";
 const Topbar = ({ manuOpen, setManuOpen }) => {
   return (
