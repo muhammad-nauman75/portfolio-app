@@ -34,16 +34,13 @@ const Home = () => {
                 Muhammad <span> Nauman</span>{" "}
               </h1>
               <div className="icons">
-                <a href={naumanCV} className="resume-link" target="_blank">
+                <a href={naumanCV} className="resume-link">
                   Resumé
                 </a>
-                <a href="https://github.com/muhammad-nauman75" target="_blank">
+                <a href="https://github.com/muhammad-nauman75">
                   <GitHub className="hero-icon" />
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/muhammad-nauman-4b9b6b215/"
-                  target="_blank"
-                >
+                <a href="https://www.linkedin.com/in/muhammad-nauman-4b9b6b215/">
                   <LinkedIn className="hero-icon" />
                 </a>
               </div>
