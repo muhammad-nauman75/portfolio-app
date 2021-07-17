@@ -74,12 +74,14 @@ const ItemStyled = styled.li`
     .pro-title {
       font-size: 30px;
       color: var(--background-color-2);
-      padding-bottom: 3px;
+      display: inline-block;
+      padding: 5px 0;
     }
     .pro-tools {
       span {
-        padding-left: 15px;
-        color: var(--font-color-3);
+        margin-left: 15px;
+        /* background-color: var(--background-color-2); */
+        color: var(--font-color-2);
       }
     }
     p {

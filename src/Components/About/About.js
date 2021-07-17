@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import naumanCV from "../../nauman-cv.pdf";
 
 const About = () => {
   return (
@@ -33,12 +34,27 @@ const About = () => {
           <br />
           If it sounds thrilled, then just feel free to contact.
         </p>
+        <a className="resume-link" href={naumanCV}>
+          Download CV
+        </a>
       </div>
     </StyledAbout>
   );
 };
 const StyledAbout = styled.section`
   margin: 50px 0;
+  .resume-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 40px;
+    color: white;
+    background-color: var(--background-color-2);
+    margin-right: 20px;
+    &:hover {
+      box-shadow: 0px 0px 31px 3px rgba(226, 122, 122, 0.38);
+    }
+  }
   p {
     line-height: 38px;
     word-spacing: 6px;

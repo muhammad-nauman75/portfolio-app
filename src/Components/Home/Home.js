@@ -4,6 +4,8 @@ import heroImg from "../../Images/my-img.png";
 import { init } from "ityped";
 import { useEffect } from "react";
 import Particle from "./Particle";
+import { GitHub, LinkedIn } from "@material-ui/icons";
+import naumanCV from "../../nauman-cv.pdf";
 
 const Home = () => {
   useEffect(() => {
@@ -23,16 +25,32 @@ const Home = () => {
       <div className="container">
         <div className="hero">
           <div className="left">
-            <img src={heroImg} alt="" />
+            <img src={heroImg} alt="avatar-img" />
           </div>
           <div className="right">
             <div className="text-box">
-              <h2>Hi! I am </h2>
-              <h1>Muhammad Nauman </h1>
-              <h3>
+              <h2>Web Developer </h2>
+              <h1>
+                Muhammad <span> Nauman</span>{" "}
+              </h1>
+              <div className="icons">
+                <a href={naumanCV} className="resume-link" target="_blank">
+                  Resumé
+                </a>
+                <a href="https://github.com/muhammad-nauman75" target="_blank">
+                  <GitHub className="hero-icon" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/muhammad-nauman-4b9b6b215/"
+                  target="_blank"
+                >
+                  <LinkedIn className="hero-icon" />
+                </a>
+              </div>
+              {/* <h3>
                 &#60; <span id="typing-text"></span>
                 &nbsp;/&#62;
-              </h3>
+              </h3> */}
             </div>
           </div>
         </div>
@@ -88,22 +106,60 @@ const SectionStyled = styled.section`
         font-size: 65px;
         padding: 5px;
         color: var(--background-color-2);
+        /* color: var(--font-color-2); */
+        span {
+          font-family: "Merienda", cursive;
+          font-weight: 700;
+          font-size: 65px;
+          padding: 0 10px;
+          /* color: var(--background-color-2); */
+          background-color: var(--background-color-2);
+          color: var(--font-color-2);
+        }
       }
       h2 {
         font-size: 40px;
         font-weight: 700;
         font-family: "Merienda", cursive;
       }
-      h3 {
-        font-size: 30px;
-        font-weight: 600;
+      .icons {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 0 50px;
+
+        a {
+          margin: 10px;
+        }
       }
-      span {
-        padding-top: 2px;
+      .hero-icon {
+        font-size: 60px;
+        padding: 5px;
+        color: var(--background-color-2);
+        &:hover {
+          border-radius: 8px;
+          box-shadow: 0px 0px 31px 3px rgba(0, 0, 0, 0.31);
+        }
+      }
+      .resume-link {
+        padding: 15px;
+        border-radius: 40px;
+        color: white;
+        background-color: var(--background-color-2);
+        margin-right: 20px;
+        &:hover {
+          box-shadow: 0px 0px 31px 3px rgba(226, 122, 122, 0.38);
+        }
+        /* h3 {
         font-size: 30px;
-        font-weight: 600;
-        /* color: var(--font-color); */
-        color: var(--font-color-3);
+        font-weight: 600; */
+
+        span {
+          padding-top: 2px;
+          font-size: 30px;
+          font-weight: 600;
+          /* color: var(--font-color); */
+          color: var(--font-color-3);
+        }
       }
     }
   }
@@ -116,20 +172,32 @@ const SectionStyled = styled.section`
       justify-content: space-around;
       .left {
         img {
-          width: 200px;
+          width: 250px;
           padding-right: 12px;
         }
       }
       .right {
+        padding-left: 15px;
         h1 {
-          font-size: 23px;
+          font-size: 35px;
+          span {
+            font-size: 35px;
+          }
         }
         h2 {
           font-size: 20px;
         }
-        h3,
-        span {
-          font-size: 15px;
+        .icons {
+          margin-left: 10px;
+          font-size: 30px;
+        }
+        .hero-icon {
+          font-size: 40px;
+          padding: 2px;
+        }
+        .resume-link {
+          font-size: 16px;
+          margin: 2px;
         }
       }
     }
