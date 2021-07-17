@@ -1,21 +1,21 @@
 import styled from "styled-components";
 import React from "react";
 import heroImg from "../../Images/my-img.png";
-import { init } from "ityped";
-import { useEffect } from "react";
+// import { init } from "ityped";
+// import { useEffect } from "react";
 import Particle from "./Particle";
 import { GitHub, LinkedIn } from "@material-ui/icons";
 import naumanCV from "../../nauman-cv.pdf";
 
 const Home = () => {
-  useEffect(() => {
-    const myElement = document.querySelector("#typing-text");
-    init(myElement, {
-      showCursor: false,
+  // useEffect(() => {
+  //   const myElement = document.querySelector("#typing-text");
+  //   init(myElement, {
+  //     showCursor: false,
 
-      strings: ["Web Developer", "Front-end Developer", "UX Designer"],
-    });
-  }, []);
+  //     strings: ["Web Developer", "Front-end Developer", "UX Designer"],
+  //   });
+  // }, []);
 
   return (
     <SectionStyled>
