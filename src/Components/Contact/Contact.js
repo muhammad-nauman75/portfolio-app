@@ -27,13 +27,10 @@ const Contact = () => {
             </div>
           </div>
           <div className="right">
-            <a href="https://github.com/muhammad-nauman75" target="_blank">
+            <a href="https://github.com/muhammad-nauman75">
               <GitHub className="icon" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/muhammad-nauman-4b9b6b215/"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/muhammad-nauman-4b9b6b215/">
               <LinkedIn className="icon" />
             </a>
           </div>
