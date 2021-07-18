@@ -90,7 +90,7 @@ const NavStyled = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
+    min-height: 90px;
     /* @media (max-width: 700px) {
       flex-direction: column;
     } */

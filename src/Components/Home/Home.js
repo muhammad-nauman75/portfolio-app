@@ -168,23 +168,44 @@ const SectionStyled = styled.section`
       flex-direction: row;
       justify-content: space-around;
       .left {
+        transform: translateX(-20px);
         img {
-          width: 250px;
-          padding-right: 12px;
+          width: 200px;
         }
       }
       .right {
         padding-left: 15px;
+        transform: translateX(-20px);
         h1 {
-          font-size: 35px;
+          font-size: 30px;
           span {
-            font-size: 35px;
+            font-size: 30px;
           }
         }
         h2 {
-          font-size: 20px;
+          font-size: 17px;
         }
         .icons {
+          margin: 8px 0 0 5px;
+          display: none;
+
+          a {
+            margin: 3px;
+          }
+        }
+        .hero-icon {
+          font-size: 40px;
+          padding: 0px;
+          color: var(--background-color-2);
+        }
+        .resume-link {
+          padding: 10px;
+          /* border-radius: 40px;
+          color: white;
+          background-color: var(--background-color-2); */
+          margin-right: 5px;
+
+          /* .icons {
           margin-left: 10px;
           font-size: 30px;
         }
@@ -194,7 +215,7 @@ const SectionStyled = styled.section`
         }
         .resume-link {
           font-size: 16px;
-          margin: 2px;
+          margin: 2px; */
         }
       }
     }

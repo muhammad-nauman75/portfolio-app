@@ -21,7 +21,7 @@ const Particle = () => {
           shape: {
             type: "circle",
             stroke: {
-              width: 3,
+              width: 2,
               color: "#ffbe0b",
             },
             polygon: {
@@ -50,7 +50,7 @@ const Particle = () => {
               enable: false,
               speed: 30,
               size_min: 0.1,
-              sync: false,
+              sync: true,
             },
           },
           line_linked: {
