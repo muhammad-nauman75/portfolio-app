@@ -15,7 +15,7 @@ const ContactForm = () => {
   useEffect(() => {
     setTimeout(() => {
       setSubmitMessage("");
-    }, 4000);
+    }, 5000);
   }, [submitMessage]);
 
   const handleSubmit = (e) => {
